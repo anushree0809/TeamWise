@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { FaGoogle } from "react-icons/fa";
 import { useForm } from "react-hook-form";
 import { useAuth } from "../context/AuthContext";
+import { getBaseUrl } from '../utils/getBaseUrl';
 
 // const Login = ({ setUserData }) => {  // Receive setUserData as a prop
 //   // const [message, setMessage] = useState("");
@@ -31,7 +32,7 @@ import { useAuth } from "../context/AuthContext";
   
         console.log("Firebase User Logged in:", user);
       // Fetch MongoDB user details using EMAIL instead of UID
-      const response = await fetch(`http://localhost:3000/api/users/${user.email}`, {
+      const response = await fetch(`${getBaseUrl()}/api/users/${user.email}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

@@ -1,4 +1,4 @@
 export const getBaseUrl = () => {
-    return import.meta.env.VITE_BASE_URL;
+    return "https://team-wise-weld.vercel.app/";
   };
   

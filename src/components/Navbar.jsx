@@ -16,8 +16,8 @@ const Navbar = () => {
         <Box>
           {/* Left Side - Notification Icon */}
         <IconButton color="inherit">
-          <Badge badgeContent={3} color="error" marginRight="12px">
-            <NotificationsIcon marginRight="12px"/>
+          <Badge badgeContent={3} color="error">
+            <NotificationsIcon />
           </Badge>
         </IconButton>
           <Button variant="outlined" sx={{ color: "white", borderColor: "white", marginRight: 1 }}>

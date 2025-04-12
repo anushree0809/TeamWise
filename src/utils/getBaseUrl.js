@@ -1,4 +1,4 @@
 export const getBaseUrl = () => {
-    return "https://team-wise-backend.vercel.app/";
+    return "https://team-wise-backend.vercel.app";
   };
   
